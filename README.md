@@ -39,7 +39,7 @@ Anaconda - Python 3.7
     import cv2
     image=cv2.imread('dip.jpg',1)
     image=cv2.resize(image,(400,300))
-    cv2.imshow('SRI KARTHICK',image)
+    cv2.imshow('YOHESH KUMAR',image)
     cv2.waitKey(0)
     cv2.destroyAllWindows()
 ``` 
@@ -48,7 +48,7 @@ Anaconda - Python 3.7
 
 ### OUTPUT:
 
- <img src="https://github.com/srikarthickeyanganapathy/COLOR_CONVERSIONS_OF-IMAGE/assets/119393842/26532ef4-a1c3-4a33-a340-9266b47f50c2">
+ <img src="dipt1.png">
   </td>
   </tr>
 
@@ -58,7 +58,7 @@ Anaconda - Python 3.7
 ### ii)Write the image
 ```Python
     import cv2
-    image=cv2.imread('dip.jpg',0)
+    image=cv2.imread('ylimg1.jpg',0)
     cv2.imwrite('demos.jpg',image)
 ```
   </td>
@@ -66,7 +66,7 @@ Anaconda - Python 3.7
 
 ### OUTPUT:
 
-<img src="https://github.com/srikarthickeyanganapathy/COLOR_CONVERSIONS_OF-IMAGE/assets/119393842/db84063f-d426-4930-9fca-ad35939e1699">
+<img src="dipt2.png">
   </td>
   </tr>
   <tr>
@@ -82,7 +82,7 @@ Anaconda - Python 3.7
   <td>
 
 ### OUTPUT:
-<img src="https://github.com/srikarthickeyanganapathy/COLOR_CONVERSIONS_OF-IMAGE/assets/119393842/0b038ce8-b450-40c8-b414-fa4e344d2cb0">
+<img src="dipt3.png">
   </td>
   </tr>
   <tr>
@@ -92,7 +92,7 @@ Anaconda - Python 3.7
 ```Python
     import random
     import cv2
-    image=cv2.imread('dip.jpg',1)
+    image=cv2.imread('ykimg1.jpg',1)
     image=cv2.resize(image,(400,400))
     for i in range (150,200):
       for j in range(image.shape[1]):
@@ -108,7 +108,7 @@ Anaconda - Python 3.7
 
 ### OUTPUT:
 
- <img src="https://github.com/srikarthickeyanganapathy/COLOR_CONVERSIONS_OF-IMAGE/assets/119393842/7e435bd7-0893-4462-8780-216a3381f9b6">
+ <img src="dipt4.png">
   </td>
   </tr>
   <tr>
@@ -118,7 +118,7 @@ Anaconda - Python 3.7
 
  ```Python
     import cv2
-    image=cv2.imread('dip.jpg',1)
+    image=cv2.imread('ykimg1.jpg',1)
     image=cv2.resize(image,(400,400))
     tag =image[130:200,110:190]
     image[110:180,120:200] = tag
@@ -131,7 +131,7 @@ Anaconda - Python 3.7
     
 ### OUTPUT:
 
-<img src="https://github.com/srikarthickeyanganapathy/COLOR_CONVERSIONS_OF-IMAGE/assets/119393842/e2141636-c9da-41ce-959e-3473c2f886e6">
+<img src="dipt5.png">
   </td>
   </tr>
 </table>
@@ -139,7 +139,7 @@ Anaconda - Python 3.7
 ### vi) BGR and RGB to HSV and GRAY
 ```Python
 import cv2
-img = cv2.imread('dip.jpg',1)
+img = cv2.imread('ykimg1.jpg',1)
 img = cv2.resize(img,(300,200))
 cv2.imshow('Original Image',img)
 hsv1 = cv2.cvtColor(img,cv2.COLOR_BGR2HSV)
@@ -155,12 +155,13 @@ cv2.destroyAllWindows()
 ```
 
 ### OUTPUT:
-![Screenshot 2024-02-12 224411](https://github.com/srikarthickeyanganapathy/COLOR_CONVERSIONS_OF-IMAGE/assets/119393842/a0c420fa-5cd2-445f-a7e9-16297f6a2b3b)
+![dipt6](https://github.com/yoheshkumar/COLOR_CONVERSIONS_OF-IMAGE/assets/119393568/2734afbb-5099-4c4b-8e7e-885da24edb1f)
+
 
 ### vii) HSV to RGB and BGR
 ```Python
 import cv2
-img = cv2.imread('dip.jpg')
+img = cv2.imread('ykimg1.jpg')
 img = cv2.resize(img,(300,200))
 img = cv2.cvtColor(img,cv2.COLOR_BGR2HSV)
 cv2.imshow('Original HSV Image',img)
@@ -173,12 +174,12 @@ cv2.destroyAllWindows()
 ```
 
 ### OUTPUT:
-![Screenshot 2024-02-12 224529](https://github.com/srikarthickeyanganapathy/COLOR_CONVERSIONS_OF-IMAGE/assets/119393842/ebc43a3c-a126-417c-a297-cc6307e45314)
+![dipt7](https://github.com/yoheshkumar/COLOR_CONVERSIONS_OF-IMAGE/assets/119393568/3b9576ed-6675-4c56-9f6d-5a8300c4bdd8)
 
 ### viii) RGB and BGR to YCrCb
 ```Python
 import cv2
-img = cv2.imread('dip.jpg')
+img = cv2.imread('ykimg1.jpg')
 img = cv2.resize(img,(300,200))
 cv2.imshow('Original RGB Image',img)
 YCrCb1 = cv2.cvtColor(img, cv2.COLOR_BGR2YCrCb)
@@ -190,12 +191,13 @@ cv2.destroyAllWindows()
 ```
 
 ### OUTPUT:
-![Screenshot 2024-02-12 224622](https://github.com/srikarthickeyanganapathy/COLOR_CONVERSIONS_OF-IMAGE/assets/119393842/36a0d7b2-1664-4624-83fb-5f0017ffab66)
+![dipt8](https://github.com/yoheshkumar/COLOR_CONVERSIONS_OF-IMAGE/assets/119393568/087847af-bf86-434e-a787-cd0f6445b89f)
+
 
 ### ix) Split and merge RGB Image
 ```Python
 import cv2
-img = cv2.imread('dip.jpg',1)
+img = cv2.imread('ykimg1.jpg',1)
 img = cv2.resize(img,(300,200))
 R = img[:,:,2]
 G = img[:,:,1]
@@ -210,12 +212,13 @@ cv2.destroyAllWindows()
 ```
 
 ### OUTPUT:
-![Screenshot 2024-02-12 224811](https://github.com/srikarthickeyanganapathy/COLOR_CONVERSIONS_OF-IMAGE/assets/119393842/e700495a-5cb4-45d6-8741-713cc5aa0497)
+![dipt9](https://github.com/yoheshkumar/COLOR_CONVERSIONS_OF-IMAGE/assets/119393568/dbdcc8c8-3489-48ee-8556-de490cd5a913)
+
 
 ### x) Split and merge HSV Image
 ```Python
 import cv2
-img = cv2.imread("dip.jpg",1)
+img = cv2.imread("ykimg1.jpg",1)
 img = cv2.resize(img,(300,200))
 img=cv2.cvtColor(img,cv2.COLOR_RGB2HSV)
 H,S,V=cv2.split(img)
@@ -229,7 +232,8 @@ cv2.destroyAllWindows()
 ```
 
 ### OUTPUT:
-![Screenshot 2024-02-12 224924](https://github.com/srikarthickeyanganapathy/COLOR_CONVERSIONS_OF-IMAGE/assets/119393842/31196d0f-ffcd-4aac-b743-2d5caf54d037)
+![dipt10](https://github.com/yoheshkumar/COLOR_CONVERSIONS_OF-IMAGE/assets/119393568/5d9fc9d8-104b-47a3-8bef-c42e6c156651)
+
 
 ## Result:
 Thus the images are read, displayed, and written ,and color conversion was performed between RGB, HSV and YCbCr color models successfully using the python program.
